@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fra_map"
+        android:name="com.example.fragment.MapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment 
+        android:id="@+id/fra_me"
+        android:name="com.example.fragment.MeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"/>
+    
+    <fragment
+        android:id="@+id/fra_near"
+        android:name="com.example.fragment.NearFragment"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="10"
+        />
+    
+    <fragment
+        android:id="@+id/fra_about"
+        android:name="com.example.fragment.AboutFragment"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="10"
+        />
+    
+  <RadioGroup  
+        android:id="@+id/bottomRg"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="0.5"  
+       
+        android:orientation="horizontal" >  
+   <!-- android:background="@drawable/tab_footer_bg"  
+
+	-->
+        <RadioButton  
+            android:id="@+id/rbmap"  
+           
+            android:checked="true"  
+            
+            android:text="地图" />  
+  
+        <RadioButton  
+            android:id="@+id/rbme"  
+            
+            android:text="我的资源" />  
+  
+        <RadioButton  
+            android:id="@+id/rbnear"  
+           
+            android:text="附近" />  
+        <RadioButton  
+            android:id="@+id/rbabout"  
+           
+            android:text="关于" />   
+        
+    </RadioGroup>  
+</LinearLayout>

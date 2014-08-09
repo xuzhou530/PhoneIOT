@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText" severity="ignore">
+        <ignore path="res/layout/me.xml" />
+    </issue>
+    <issue id="InefficientWeight" severity="ignore" />
+    <issue id="ManifestOrder" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ObsoleteLayoutParam" severity="ignore" />
+    <issue id="OldTargetApi">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="Orientation" severity="ignore" />
+    <issue id="UselessParent" severity="ignore" />
+</lint>
